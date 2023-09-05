@@ -1,0 +1,626 @@
+
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none; /* nav bar (home about athukalukku keela vaara line a remoe panna)*/
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+.logo{
+    font-size: 1.5rem;
+    color: rgb(3, 132, 187);
+    cursor: default;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+
+.logo span{
+    color: #060606;
+    font-size: 2.1rem;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header .user img{
+    height: 14rem;
+    width: 14rem;
+    margin: 15px 0;
+    border: 1px solid transparent;
+    box-shadow: .10px .8px 4px ; /*4 kku pakkaththila . poddu paakkanum*/
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: gainsboro;
+    padding-left: 30rem;
+}
+
+/*body.active{
+    --black:#fff;
+    --light-color:#ddd;
+    --bg-color:#222;
+    --border:16px solid rgba(0,0,0,0.2);
+    --box-shadow:.4rem .4rem 1rem  #111 inset,
+                -.4rem -.4rem 1rem #333 inset;
+
+}*/
+
+
+section{
+    min-height: 100vh;
+    padding: 4rem;
+}
+
+
+.btn{
+    margin-top:6rem;
+    align-items: center;
+    display: inline-block;
+    padding: 1rem 3.5rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background: none;
+    color: rgba(7, 20, 108, 0.804);
+    box-shadow: .4rem .4rem 1rem #5c5b5b,
+    -.4rem -.4rem 1rem #9294a9;
+}
+
+
+.btn:hover{
+    color: rgb(19, 148, 45);
+    box-shadow: .4rem .4rem 1rem  #695f5f inset,
+                -.4rem -.4rem 1rem #4c3f3f inset;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.804);
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+
+
+.heading span{
+    text-transform: capitalize;
+    color: rgb(26, 156, 70);
+    
+}
+
+
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 999;
+    background: rgb(191, 189, 189);
+    width: 250px;
+    border-right: 10px  solid rgba(163, 162, 162, 0.3);
+    height: 100%;
+    padding: 2rem;
+    text-align: center
+}
+
+.header .user h3{
+    color: rgb(5, 5, 5);
+    font-size: 20px;
+}
+
+.header .user p{
+    padding: 10px;
+    color: rgba(7, 140, 9, 0.804);
+    font-size: 15px;
+}
+
+.header .navbar{
+    padding-top: 1rem;
+}
+
+
+.header .navbar a{
+    display: block; /* block use panni home,about a vertival line kku kondu vara*/
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-right: 5rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    box-shadow: .4rem .4rem 1rem #ccc,
+                -.4rem -.4rem 1rem #fff;
+    color: rgb(0, 0, 0);
+}
+
+.header .navbar a:hover{
+    box-shadow: .4rem .4rem 1rem  #695f5f inset,
+                -.4rem -.4rem 1rem #4c3f3f inset;
+
+}
+
+#menu-icon{
+    position: fixed;
+    top: 1.5rem;
+    left: .5rem;
+    z-index: 1000;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: .4rem .4rem 1rem #ccc,
+                -.4rem -.4rem 1rem #fff;
+    text-align: center;
+    color: #060606;
+    display: none;
+}
+
+
+#menu-icon:hover{
+    color: rgb(3, 189, 40);
+    box-shadow: .4rem .4rem 1rem  #695f5f inset,
+                -.4rem -.4rem 1rem #4c3f3f inset;
+}
+
+
+/*#theme-icon{
+    position: fixed;
+    top: 1.5rem;
+    right: 1rem;
+    z-index: 1000;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: .4rem .4rem 1rem #ccc,
+                -.4rem -.4rem 1rem #fff;
+    text-align: center;
+    color: #060606;
+}
+
+#theme-icon:hover{
+    color: rgb(3, 189, 40);
+    box-shadow: .4rem .4rem 1rem  #695f5f inset,
+                -.4rem -.4rem 1rem #4c3f3f inset;
+}
+*/
+
+
+.home{
+    display: flex;
+    flex-flow: column;
+    padding-left: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.home .content h3{
+    font-size: 3rem;
+    color: rgb(35, 29, 19);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+
+.home .content h4{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: rgb(26, 156, 70);
+    padding-bottom: 0.5rem;
+}
+
+
+.home .content h5{
+    font-size: 1.3rem;
+    color: rgb(38, 122, 55);
+    padding-right: 40px;
+}
+
+
+.home .content p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    padding-left: 60px;
+}
+
+
+.home .share{
+    position: relative;
+    top: 8rem;
+    border-radius: 1rem;
+    /*box-shadow: .4rem .4rem 1rem  #695f5f inset,
+                -.4rem -.4rem 1rem #4c3f3f inset;*/
+    padding: 2rem 3rem;
+    
+}
+
+
+.home .share a{
+    font-size: 15px;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    color: rgb(17, 32, 195);
+    box-shadow: .4rem .4rem 1rem  #a8a2a2 inset,
+                -.4rem -.4rem 1rem #f9ebeb inset;
+    margin: 0.5rem;
+    color: rgba(7, 20, 108, 0.804);
+    border-radius: 16px;
+    
+}
+
+
+.home .share a:hover{
+    color: rgb(3, 189, 40);
+    box-shadow: .4rem .4rem 1rem  #695f5f inset,
+                -.4rem -.4rem 1rem #4c3f3f inset;
+}
+
+
+.about .row{
+    display: flex;
+    
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.about .row .box-container{
+    flex: 1 1 40rem;
+    display: flex;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+/*.about .row .box-container.box{
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: .4rem .4rem 1rem  #695f5f inset,
+    -.4rem -.4rem 1rem #4c3f3f inset;
+}*/
+
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+
+.about .row .content p{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #000000;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+
+.about .row .content h3{
+    font-size: 2.3rem;
+    line-height: 1.8;
+    color: #060606;
+     
+}
+
+
+.about .row .content h3 span{
+    color: rgb(26, 156, 70);
+}
+
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+
+.about .row .content .button{
+    margin-top:6rem;
+    margin-left: 2rem;
+    align-items: center;
+    display: inline-block;
+    padding: 1rem 3.5rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background: none;
+    color: rgba(7, 20, 108, 0.804);
+    box-shadow: .4rem .4rem 1rem #5c5b5b,
+    -.4rem -.4rem 1rem #9294a9;
+}
+
+
+
+.about .row .content .button:hover{
+    color: rgb(19, 148, 45);
+    box-shadow: .4rem .4rem 1rem  #695f5f inset,
+                -.4rem -.4rem 1rem #4c3f3f inset;
+}
+
+
+.about .row:nth-child(3){
+    padding-top: 2rem;
+}
+
+
+.about .row .progress{
+    flex: 1 1 40rem;
+}
+
+
+.about .row .progress h3{
+    color: #000000;
+    font-weight: normal;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.about .row .progress .bar{
+    box-shadow: .4rem .4rem 1rem  #a8a2a2 inset,
+                -.4rem -.4rem 1rem #f9ebeb inset;
+    border-radius: 5rem;
+    height: 1.5rem;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+
+.about .row .progress .bar span{
+    display: block;
+    height: 100%;
+    background: rgb(26, 156, 70);
+}
+
+
+.about .row .progress .bar-1-1 span{
+    width: 70%;
+}
+
+
+.about .row .progress .bar-1-2 span{
+    width: 60%;
+}
+
+
+.about .row .progress .bar-1-3 span{
+    width: 40%;
+}
+
+
+.about .row .progress .bar-2-1 span{
+    width: 80%;
+}
+
+
+.about .row .progress .bar-2-2 span{
+    width: 70%;
+}
+
+
+.about .row .progress .bar-2-3 span{
+    width: 60%;
+}
+
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 2fr));
+    gap: 5rem;
+}
+
+
+.services .box-container .box{
+    padding: 3rem 3rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background: rgb(194, 206, 198);
+    box-shadow: .4rem .4rem 1rem  #dfe2e0 inset,
+    -.4rem -.4rem 1rem #364635 inset;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+
+.services .box-container .box h3{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: black;
+}
+
+
+
+.services .box-container .box p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #3b3939;
+}
+
+
+
+.services .box-container .box ::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    background: rgb(26, 156, 70);
+    z-index: -1;
+    clip-path: circle(7rem at 5% 0%);
+    transition: 0.1s step-end;
+}
+
+
+.services .box-container .box i{
+    font-size: 3rem;
+    padding-bottom: 4rem;
+    color: #fff;
+}
+
+
+/*.services .box-container .box:hover ::before{
+    clip-path: circle(300px);
+
+}*/
+
+
+.services .box-container .box:hover > *{
+    color: #139822;
+}
+
+
+
+.portfolio .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 2fr));
+    gap: 5rem;
+}
+
+
+.portfolio .box-container .box{
+    height: 20rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: .4rem .4rem 1rem  #978484 inset,
+                -.4rem -.4rem 1rem #cad3d1 inset;
+    position: relative;
+    border: 1rem solid transparent;
+}
+
+
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.portfolio .box-container .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(150, 189, 135);
+    display: grid;
+    place-items: center;
+    transform: scale(0);
+}
+
+
+
+.portfolio .box-container .box:hover .content{
+    transform: scale(1);
+
+}
+
+
+.portfolio .box-container .box .content h3{
+    font-size: 3rem;
+    color: #000000;
+    text-transform: uppercase;
+    transform: translateY(-5rem);
+    opacity: 0;
+    transition-delay: 0.4s #5ba964;
+}
+
+
+.portfolio .box-container .box:hover .content h3{
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+
+.contact form{
+    margin: 1rem auto;
+    max-width: 70rem;
+    border-radius: 1rem;
+    box-shadow: .4rem .4rem 1rem  #bcbcbc inset,
+                -.4rem -.4rem 1rem #cad3d1 inset;
+    padding: 3rem;
+}
+
+
+.contact form .box{
+    padding: 1rem 1.5rem;
+    width: 100%;
+    background: none;
+    color: #000000;
+    font-size: 1.5rem;
+    text-transform: none;
+    margin: .7rem 0;
+    box-shadow: .4rem .4rem 1rem  #e4e4e4 inset,
+                -.4rem -.4rem 1rem #adadad inset;
+    border-radius: .5rem;
+}
+
+
+
+.contact form textarea{
+    height: 20rem;
+    resize: none;
+}
+
+
+.contact form .box:focus{
+    box-shadow: .4rem .4rem 1rem  #dfdfdf inset,
+                -.4rem -.4rem 1rem #cdcdcd inset;
+}
+
+
+
+
+@media(max-width:991px){
+    html{
+        font-size: 50%;
+    }
+
+    .header{
+        left: -110%;
+    }
+
+    .header.active{
+        left: 0;
+        transition: 0.4s linear;
+        
+    }
+
+    #menu-icon{
+        display: initial;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 40%;
+    }
+
+    .header{
+        width: 100%;
+    }
+}

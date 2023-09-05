@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!--font cdnjs link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--custom css file link-->
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <!--starting of header part-->
+<header class="header">
+    <a href="#" class="logo"> <span>P</span>ortfolio..</a>
+    <div class="user">
+        <img src="image/2.jpg" alt="">
+        <h3>Sivaneswaran Junoj</h3>
+        <p>Front-End Developer</p>
+    </div>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!--ending of the header part-->
+<div id="menu-icon" class="fas fa-bars"></div>
+
+
+<!--theme toggler-->
+<!--<div id="theme-icon" class="fas fa-moon"></div>-->
+
+<!--home section-->
+<section class="home" id="home">
+    <div class="content">
+        <h5>Hello, it's me</h5>
+        <h3>Sivaneswaran Junoj</h3>
+        <h4> I am a front-end developer</h4>
+       <!-- <p>Higly skilled and detail-oriented front-end developer.
+            <br>
+            proficient in HTML,CSS,JavaScript and React Front-End Framework.
+            <br>
+            adept at translating design concepts into fully functional,reponsive websites with
+            <br>
+            a focus on user experience and accessibility.
+            <br>
+            Strong communication skills and ability to colloborate effectively woth cross-functinal teams.
+
+        </p>-->
+        <a href="" class="btn" target="_blank" onclick="downloadCV()">download CV</a>
+    </div>
+
+    <div class="share">
+        <a href="https://www.facebook.com/junoj.siva" class="fab fa-facebook-f"  target="_blank"></a>
+        <a href="www.twitter.com/@davis_junoj" class="fab fa-twitter"  target="_blank"></a>
+        <a href="https://instagram.com/junojsiva?igshid=YmMyMTA2M2Y" class="fab fa-instagram"  target="_blank"></a>
+        <a href="https://www.linkedin.com/in/junoj-siva" class="fab fa-linkedin"  target="_blank"></a>
+    </div>
+</section>
+
+<!--about section-->
+<section class="about" id="about">
+    <h1 class="heading"><span>about</span> me </h1>
+    <div class="row">
+        <div class="box-container">
+            <!--<div class="box">
+                <h3>6+</h3>
+                <p>months of experience</p>
+            </div>-->
+            <div class="content">
+                <h3>my name is <span> Sivaneswaran Junoj</span></h3>
+                <p>Higly skilled and detail-oriented front-end developer.
+                    <br>
+                    proficient in HTML,CSS,JavaScript and React Front-End Framework.
+                    <br>
+                    adept at translating design concepts into fully functional,reponsive websites with
+                    <br>
+                    a focus on user experience and accessibility.
+                    <br>
+                    with my strong technical skills, creative problem solving abilities
+                    <br>
+                    and passion for front-end development, i am confident in my
+                    <br>
+                    ability to make valuable contributions to any project or team.
+        
+                </p>
+                <a href="#" class="button">contact me</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="progress">
+            <h3>graphic design <span>70%</span></h3>
+            <div class="bar bar-1-1"><span></span></div>
+            <h3>web design <span>60%</span></h3>
+            <div class="bar bar-1-2"><span></span></div>
+            <h3>UI / UX design <span>40%</span></h3>
+            <div class="bar bar-1-3"><span></span></div>
+        </div>
+
+        <div class="progress">
+            <h3>HTML <span>80%</span></h3>
+            <div class="bar bar-2-1"><span></span></div>
+            <h3>CSS <span>70%</span></h3>
+            <div class="bar bar-2-2"><span></span></div>
+            <h3>JavaScript <span>60%</span></h3>
+            <div class="bar bar-2-3"><span></span></div>
+        </div>
+    </div>
+</section>
+
+<!--services section-->
+<section class="services" id="services">
+    <h1 class="heading">My <span>services</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h3>graphic design</h3>
+            <p>Graphic Design is the art and practice of creating visual content to communicate information and iseas to a specific audience.it involoves combining typography, photography, illustration, and other design elements to create a variety of visual media, including logos, websites, brouchers and advertisements.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Digital Marketing</h3>
+            <p>digital Marketing offers businesses the opportunity to reach a wider audience and target their ideal customers more effectively through data-driven strategies. this can include search engine optim.zation, pay-per-click advertising, social media marketing, email margeting, content marketing and more. </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!--portfolio section-->
+<section class="portfolio" id="portfolio">
+    <h1 class="heading">
+        my <span>portfolio</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="image/1.jpg" alt="">
+            <div class="content">
+                <h3>project 01</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/1.jpg" alt="">
+            <div class="content">
+                <h3>project 02</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/1.jpg" alt="">
+            <div class="content">
+                <h3>project 03</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--contact section-->
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>contact</span> me
+    </h1>
+    <form action="">
+        <input type="text" placeholder="your name" class="box">
+        <input type="email" placeholder="your email" class="box">
+        <input type="text" placeholder="subject" class="box">
+        <textarea name="" class="box" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+</section>
+
+
+
+    <!--custom js file link-->
+    <script src="portfolio.js"></script>
+</body>
+</html>
